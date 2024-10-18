@@ -9,6 +9,16 @@
     />
     <link rel="stylesheet" href="src/styles.css" />
     <title>Welcome to South Africa</title>
+    <style>
+      .map-container {
+        display: none;
+        margin-top: 15px;
+      }
+
+      .btn {
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -33,10 +43,16 @@
             <h2>Why South Africa?</h2>
             <h3>Explore the beauty of the Rainbow Nation</h3>
             <p>
-              South Africa is known for its rich culture, diverse wildlife, and stunning landscapes. From the bustling cities like Cape Town and Johannesburg to the breathtaking beauty of Table Mountain and Kruger National Park, South Africa offers something for every traveler.
+              South Africa is known for its rich culture, diverse wildlife, and
+              stunning landscapes. From the bustling cities like Cape Town and
+              Johannesburg to the breathtaking beauty of Table Mountain and
+              Kruger National Park, South Africa offers something for every
+              traveler.
             </p>
             <p>
-              Whether you're exploring the vibrant streets, savoring local cuisine, or heading out on a safari adventure, South Africa will leave you with unforgettable memories.
+              Whether you're exploring the vibrant streets, savoring local
+              cuisine, or heading out on a safari adventure, South Africa will
+              leave you with unforgettable memories.
             </p>
           </div>
         </section>
@@ -45,7 +61,6 @@
           <h2 class="text-center">Tourist Attractions</h2>
           <h3 class="text-center">Must-Visit Places in South Africa</h3>
           <div class="grid grid-3-columns">
-           
             <div class="card">
               <img
                 src="https://images.lonelyplanetitalia.it/static/places/blyde-river-canyon-1720.jpg?q=80&s=cc89d1b3ecaba4769399d2b9bd275a0f"
@@ -54,11 +69,29 @@
               />
               <h4>Blyde River Canyon</h4>
               <p>
-                One of the largest canyons in the world, offering dramatic views and unique hiking experiences in Mpumalanga province.
+                One of the largest canyons in the world, offering dramatic views
+                and unique hiking experiences in Mpumalanga province.
               </p>
               <h5>Location:</h5>
               <p>Mpumalanga</p>
-              <a href="https://goo.gl/maps/example1" class="btn" target="_blank">Learn more</a>
+
+              <a
+                href="javascript:void(0);"
+                class="btn"
+                onclick="toggleMap('map1')"
+                >Learn more</a
+              >
+              <div id="map1" class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29023.536382309336!2d30.792286329719172!3d-24.591196148763242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec256cdda7c57b1%3A0xb542746f8cfe522d!2sBlyde%20River%20Canyon!5e0!3m2!1sen!2sza!4v1729287260090!5m2!1sen!2sza"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
 
             <div class="card">
@@ -69,14 +102,31 @@
               />
               <h4>Kruger National Park</h4>
               <p>
-                One of Africa's largest game reserves, famous for the Big Five, scenic drives, and a rich variety of wildlife.
+                One of Africa's largest game reserves, famous for the Big Five,
+                scenic drives, and a rich variety of wildlife.
               </p>
               <h5>Location:</h5>
               <p>Mpumalanga and Limpopo provinces</p>
-              <a href="https://goo.gl/maps/example2" class="btn" target="_blank">Learn more</a>
+
+              <a
+                href="javascript:void(0);"
+                class="btn"
+                onclick="toggleMap('map2')"
+                >Learn more</a
+              >
+              <div id="map2" class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.209309823553!2d31.552165276129518!3d-23.988384778508728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec34896c535a0a1%3A0x9a504ed31f67787b!2sKruger%20National%20Park!5e0!3m2!1sen!2sza!4v1729287324117!5m2!1sen!2sza"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
 
-            
             <div class="card">
               <img
                 src="https://1.bp.blogspot.com/-cHuLNupG624/TkmlKix_1AI/AAAAAAAAAK8/-EWEcA3Y_3c/s1600/5.jpg"
@@ -85,11 +135,28 @@
               />
               <h4>Table Mountain</h4>
               <p>
-                Iconic flat-topped mountain overlooking Cape Town, offering panoramic views of the city and the Atlantic Ocean.
+                Iconic flat-topped mountain overlooking Cape Town, offering
+                panoramic views of the city and the Atlantic Ocean.
               </p>
               <h5>Location:</h5>
               <p>Cape Town</p>
-              <a href="https://goo.gl/maps/example3" class="btn" target="_blank">Learn more</a>
+              <a
+                href="javascript:void(0);"
+                class="btn"
+                onclick="toggleMap('map3')"
+                >Learn more</a
+              >
+              <div id="map3" class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26472.00520065098!2d18.404963347911977!3d-33.96682278408702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc67f7b1b2b61f%3A0x5fdb77f98d0dfeb4!2sMaclear&#39;s%20Beacon!5e0!3m2!1sen!2sza!4v1729287380081!5m2!1sen!2sza"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </div>
         </section>
@@ -133,13 +200,19 @@
             <h3>More about South Africa</h3>
             <ul>
               <li>
-                <a href="https://www.southafrica.net/" target="_blank">South Africa Travel Guide</a>
+                <a href="https://www.southafrica.net/" target="_blank"
+                  >South Africa Travel Guide</a
+                >
               </li>
               <li>
-                <a href="https://goo.gl/maps/example" target="_blank">Map of South Africa</a>
+                <a href="https://goo.gl/maps/example" target="_blank"
+                  >Map of South Africa</a
+                >
               </li>
               <li>
-                <a href="https://www.myciti.org.za/en/home/" target="_blank">Public transport map</a>
+                <a href="https://www.myciti.org.za/en/home/" target="_blank"
+                  >Public transport map</a
+                >
               </li>
             </ul>
           </div>
@@ -147,7 +220,9 @@
           <div>
             <h3>About me</h3>
             <p>
-              Hi! My name is Shanice, and I’ve been living in South Africa for several years. I created this page as part of a project to develop my coding skills.
+              Hi! My name is Shanice, and I’ve been living in South Africa for
+              several years. I created this page as part of a project to develop
+              my coding skills.
             </p>
           </div>
 
@@ -155,13 +230,31 @@
             <h3>About this website</h3>
             <footer>
               This Project Was Coded By Shanice Jones And Is Hosted on
-              <a href="https://eclectic-profiterole-bf7254.netlify.app/" target="_blank">Netlify</a>
+              <a
+                href="https://eclectic-profiterole-bf7254.netlify.app/"
+                target="_blank"
+                >Netlify</a
+              >
               And
-              <a href="https://github.com/OShaniceO/Travel-Project" target="_blank">Github</a>
+              <a
+                href="https://github.com/OShaniceO/Travel-Project"
+                target="_blank"
+                >Github</a
+              >
             </footer>
           </div>
         </section>
       </footer>
     </div>
+    <script>
+      function toggleMap(id) {
+        var map = document.getElementById(id);
+        if (map.style.display === "none" || map.style.display === "") {
+          map.style.display = "block";
+        } else {
+          map.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
